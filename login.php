@@ -7,7 +7,7 @@
     <style>
     /* Your custom CSS code here */
     body {
-      background-image: url('final_project_web2\Images\240_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg');
+      background-image: url('Images\240_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -66,14 +66,16 @@
 </head>
 <body>
     <h2>User Login</h2>
+    <div class="login-container">
     <form action="login_process.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" name="username" required>
-        <br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" required>
-        <br>
-        <input type="submit" value="Login">
+      <label for="username">Username:</label>
+      <input type="text" name="username" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" name="password" required>
+      <br>
+      <input type="submit" value="Login">
     </form>
+  </div>
 </body>
 </html>

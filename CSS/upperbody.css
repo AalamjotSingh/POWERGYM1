@@ -1,0 +1,54 @@
+.upperbody{
+
+    background-image: url("rodrigo-s-2mz9IKab7DE-unsplash.jpg");
+  
+    height: 800px;
+    text-align: center;
+    color: rgb(85, 255, 0);
+    background-size: cover;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+ }
+.upperbody ol
+{
+    display: none;
+    list-style: none;
+    text-align: center;
+    
+}
+.upperbody li{
+    display: inline-block;
+    margin: 12px;
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0.88;
+
+    
+}
+.upperbody li:hover{
+    opacity: 0.88;
+    cursor: pointer;
+    transform: scale3d(1.25,1.25,1.25);
+    transition: all 0.4s ease-out;
+}
+.upperbody h1{
+
+    margin-top: 75px;
+    font-size: 55px;
+}
+.upperbody h1:hover{
+    transform: scale3d(1.8,1.4,1.4);
+    color:rgb(43, 255, 0);
+  }
+
+.upperbodydata{
+
+   margin:100px;
+   font-size: 50px;
+   text-align: center;
+ }
+.upperbodydata>p{
+font-size: 28px;
+
+}

@@ -1,0 +1,191 @@
+
+html{
+  display: grid;
+  scroll-behavior: smooth;
+}
+@media only screen and (max-width: 800px) {
+  upperbody ol{
+    display: none;
+  }
+  }
+
+
+
+#dropcap{
+
+    color: black;
+    float: left;
+    font-family:cursive;
+    font-size: 69px;
+    line-height: 80px;
+    padding-top: 40px;
+    padding-right: 2px;
+    padding-left: 3px;
+   
+}
+* {
+    box-sizing: border-box;
+  }
+  
+
+.row{
+    /* display: flex;
+    flex-wrap: wrap; */
+    text-align: center;
+
+}
+
+footer{
+    margin-top: 30px;
+background-color:hsla(224, 9%, 48%, 0.8);
+color: rgb(245, 245, 245);
+   height: auto;
+   text-align: center;
+   
+}
+
+    
+.photo_galery{
+    float: left;
+    flex:5%;
+    margin: auto;
+}
+.photo_galery img{
+    margin: 20px;
+     height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    
+    opacity: 1;
+}
+.photo_galery img:hover{
+    margin: 22px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+    height: 302px;
+    width: 302px;
+    opacity: 0.75;
+    transform: rotate(-25deg);
+    transition: all 0.5s ease-out;
+    
+}
+.col img:hover{
+    transform: scale3d(2.2.2);
+  
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+
+  input[type=text], select, textarea {
+    /* width: 100%; */
+    padding: 10px;
+    border: 1px solid #909090;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 14px;
+    width: 240px;
+  }
+  
+  input[type=submit]:hover {
+
+    background-color: #00ff0d;
+    opacity:1.5 ;
+  }
+  
+ 
+  .membership_form {
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 12px;
+  }
+  
+
+  .column {
+    float: left;
+    width: 55%;
+    margin-top: 12px;
+    padding: 22px;
+  }
+  #colr{
+      padding-top: 42px;
+  }
+  #colr>form>label{
+      font-size: 26px;
+  }
+  
+/* 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+  
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .topnav {
+  background-color: gray;
+  overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px 17px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

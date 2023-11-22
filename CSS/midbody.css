@@ -1,0 +1,97 @@
+/* .midbody
+{
+    float: left;
+    flex: 50%;
+    height: 500px;
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    background-size:cover;
+    background-image: url("emily-sea-coiWR0gT8Cw-unsplash\ -\ Copy.jpg");
+   
+} */
+
+/* .midbody {
+    float: left;
+    flex: 50%;
+    height: 1000px;
+    width: 300px;
+    color: white;
+    text-align: center;
+     background-image: url("emily-sea-coiWR0gT8Cw-unsplash1.jpg");
+    background-size: cover;
+}
+
+@media (max-width: 2000px) {
+    .midbody {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("emily-sea-coiWR0gT8Cw-unsplash\ -phone.jpg");
+    }
+} */
+/* .midbody{
+float: left;
+flex: 60%;
+height: 600px;
+width: 400px;
+color: white;
+
+text-align: center;
+background-repeat: no-repeat;
+background-image: url(emily-sea-coiWR0gT8Cw-unsplashLarge.jpg);
+}
+@media (max-width: 2000px) {
+    .midbody {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("emily-sea-coiWR0gT8Cw-unsplash\ -phone.jpg");
+    }
+}  */
+
+.midbody>a{
+    width:100%;
+    height: 100%;
+}
+
+.midbody button{
+    
+    background: transparent;
+    border-color: rgb(0, 0, 0);
+    margin-top: 35px;
+    color :rgb(0, 255, 0);
+}
+.midbody button:hover
+{
+  
+    color:chartreuse;
+    transform: scale3d(2,2,2);
+}
+.midbodyi
+{
+    float: left;
+    flex: 65%;
+  
+    color: white;
+    text-align: center;
+   
+   
+   
+}
+
+.midbodyi input
+{
+   
+    float: left;
+
+
+}
+.midbodyi button{
+   
+    float: left
+
+}

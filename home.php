@@ -7,6 +7,8 @@
   <title>Power Gym</title>
   <style>
     body {
+      font-family: Arial, Helvetica, sans-serif;;
+
       background-image: url('Images/guy_deadlift.jpg'); /* Change to your image path */
       background-size: cover;
       background-position: center;

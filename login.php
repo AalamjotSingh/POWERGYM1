@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
     <style>
-    /* Your custom CSS code here */
+    /* CSS */
     body {
-      background-image: url('Images\240_F_102528344_XfIuLtPSSBIIR3NYtLRe1QOBUgkdS8Cp.jpg');
+      background-image: url('Images/guy_deadlift.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -29,7 +29,7 @@
       padding: 10px;
       margin: 8px 0;
       box-sizing: border-box;
-      border: 1px solid #ccc;
+      border: 5px solid #ccc;
       border-radius: 5px;
       outline: none;
       transition: border-color 0.3s;
@@ -40,27 +40,10 @@
       border-color: #4CAF50;
     }
 
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url('your-background-image.jpg');
-      background-size: cover;
-      background-position: center;
-      animation: slide 20s linear infinite;
-      z-index: -1;
-    }
-
-    @keyframes slide {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-100%);
-      }
+    h2 {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000000;
     }
   </style>
 </head>

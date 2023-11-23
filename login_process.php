@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Connect to the database
+// database conection setup
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -13,25 +13,25 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Process login form
+// logic for the login form 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Retrieve user data from the database
+    // get user data from the database
     $sql = "SELECT id, username, password FROM users WHERE username='$username'";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
 
-        // Verify password
+        // if condition to verify passowrd
         if (password_verify($password, $row["password"])) {
-            // Authentication successful, store user information in session
+            // after successful authentication, storing user information in session
             $_SESSION["user_id"] = $row["id"];
             $_SESSION["username"] = $row["username"];
 
-            // Redirect to a protected page or homepage
+            // Redirect to the homepage after valid username and password
             header("Location: home.php");
             exit();
         } else {

@@ -112,6 +112,9 @@
       <br>
       <input type="submit" value="Register">
     </form>
+
+    <p style="text-align: center; margin-top: 20px; color: black;">
+      If you already have an account, <a href="login.php" style="color: #4CAF50;">log in here</a>.
   </div>
 </body>
 

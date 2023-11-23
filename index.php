@@ -10,7 +10,7 @@
 
 <title>  Power Gym  </title>
 
-<!-- fontawesome and jquerry -->
+<!-- fontawesome, jquerry and google maps -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-CE6pKg1Iuz1b9YgDLqszfhM3D7xKKaT/c6cPhB+q3KJDRnlaSjU3D+LcA1KV3QFg7ckJo+ypskEtwRsfD2ntHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +19,13 @@
 
 </head>
 
+<!---------------------------- php navbar --------------------->
+<?php include 'navbar.php'; ?>
+
+
 <!---------------------------- javascript --------------------->
 <script src="main.js"></script>
+<script src="responsive_navbar.js"></script>
 
 <!------------------------------- css ------------------------------------->
 <link rel="stylesheet" href="CSS/upperbody.css" type="text/css">
@@ -33,7 +38,7 @@
 
 
 <!-- responsive navbar -->
-<script>
+<!-- <script>
   function navbarFunction() {
     var x = document.getElementById("navbar");
     if (x.className === "topnav") {
@@ -42,11 +47,11 @@
       x.className = "topnav";
     }
   }
-</script>
+</script> -->
 
 <body onload="loaded()">
 
-  <div style="background-color: hsl(0,0%,0%,0.9); opacity: 0.8;" class="topnav" id="navbar">
+  <!-- <div style="background-color: hsl(0,0%,0%,0.9); opacity: 0.8;" class="topnav" id="navbar">
     <a style="text-decoration: none;" href="#home" class="active">Home</a>
     <a style="text-decoration: none;" href="#table">Pricing</a>
     <a style="text-decoration: none;" href="#membership_form">Location</a>
@@ -55,7 +60,8 @@
     <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
       <i class="fa fa-bars"></i>
     </a>
-  </div>
+  </div> -->
+
   <div class="upperbody" id="transition" id="backgoundcolorusage">
     <ol id="olusage" id="olusage">
       <li id="liusage"><a style="text-decoration: none;" href="#">Home</a></li>

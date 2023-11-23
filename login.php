@@ -68,6 +68,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-CE6pKg1Iuz1b9YgDLqszfhM3D7xKKaT/c6cPhB+q3KJDRnlaSjU3D+LcA1KV3QFg7ckJo+ypskEtwRsfD2ntHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="CSS/mainstyle.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!---------------------------- javascript --------------------->
+  <script src="main.js"></script>
+  <script src="responsive_navbar.js"></script>
   <style>
     /* CSS */
     body {
@@ -114,6 +123,8 @@
 </head>
 
 <body>
+  <?php include 'navbar.php'; ?>
+
   <div class="login-container">
     <h2>User Login</h2>
     <form action="login_process.php" method="post">

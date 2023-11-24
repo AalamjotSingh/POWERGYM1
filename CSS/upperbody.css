@@ -1,12 +1,9 @@
 .upperbody{
-
-    background-image: url("banner.jpg");
-  
+    background-image: url('Images/guy_deadlift.jpg');
     height: 800px;
     text-align: center;
     color: rgb(85, 255, 0);
     background-size: cover;
-  
     background-position: center;
     background-repeat: no-repeat;
  }

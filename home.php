@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--this is the home page where users can browse the available classes and register in these classes, the logic lies in class_registration_process.php --->
 
 <head>
   <meta charset="UTF-8">
@@ -23,7 +24,7 @@
     body {
       font-family: Arial, Helvetica, sans-serif;;
 
-      background-image: url('Images/guy_deadlift.jpg'); /* Change to your image path */
+      background-image: url('Images/guy_deadlift.jpg'); 
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -41,7 +42,7 @@
 
     h3 {
       text-align: center;
-      color: #333; /* Adjust text color as needed */
+      color: #333; 
     }
 
     table {
@@ -60,7 +61,7 @@
       background-color: #f2f2f2;
     }
 
-    /* Responsive Styles */
+    /* media querries */
     @media (max-width: 768px) {
       .container {
         max-width: 100%;
@@ -105,7 +106,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Fetch class timings from the database
+    //  table class_timings for diplaying the infomration regarding the classes
     $sql = "SELECT id, class_name, start_time, end_time, seats_left FROM class_timings";
     $result = $conn->query($sql);
 

@@ -22,13 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //extra_feature using sql query statements to prevent sql injection attacks
     $query_check_username = "SELECT * FROM users WHERE username = ?";
     $query_statement = $conn->prepare($query_check_username);
-    // bind_param is used to bind the parameter string to the $username, username will replace ? in the query_statement
+    // bind_param is used to bind the parameter of type string to the $username, username will replace ? in the query_statement
     $query_statement->bind_param("s", $username);
     // executing the query_statements 
     $query_statement->execute();
     // storing th result of the querry in $result for further useage 
     $result = $query_statement->get_result();
     
+    // when num_rows method has more than one rows ie the user alreadyt exists in the databse 
     if ($result->num_rows > 0) {
         // when user is alerady registerd, display alert and redirect to login.php
         echo "<script>

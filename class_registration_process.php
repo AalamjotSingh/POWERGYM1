@@ -1,13 +1,15 @@
 <?php
+// This file has the logic for home.php where users can register for classes this file handles logic for class registration
 session_start();
 
-// Check if the user is logged in
+// Registration logic, the user will be redirected to the login page when this link is opend withoutthe sessionvariables being set
 if (!isset($_SESSION["user_id"])) {
-    header("Location: login.php"); // Redirect to login page or handle as needed
+    echo "<script>alert('You need to be logged in to register for classes.');</script>";
+    echo "<script>window.location.replace('login.php');</script>";
     exit();
 }
 
-// Connect to the database (replace with your database credentials)
+// daatbase connection 
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -27,17 +29,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check class availability and capacity
     $availability = checkClassAvailability($class_id);
     if ($availability > 0) {
-        // Insert class registration data into the database
+        // Inserting class registration data into the database
         $sql = "INSERT INTO registered_users (user_id, class_id) VALUES ('$user_id', '$class_id')";
         if ($conn->query($sql) === TRUE) {
-            // Successfully registered, decrement seats_left
             updateSeatsLeft($class_id);
-            echo "Class registration successful!";
+            echo "<script>alert('Class registration successful!'); window.location.replace('index.php');</script>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
     } else {
-        echo "Class is full. Please choose another class.";
+        echo "<script>alert('Class is full. Please choose another class.');</script>";
     }
 }
 
@@ -66,12 +67,12 @@ function checkClassAvailability($class_id)
     return 0; // Class not found
 }
 
-// Function to update seats_left after a successful registration
+// update seats_left after a successful registration
 function updateSeatsLeft($class_id)
 {
     global $conn;
 
-    // Decrement seats_left for the selected class
+    //Decrease seats_left for the selected class
     $conn->query("UPDATE class_timings SET seats_left = seats_left - 1 WHERE id = '$class_id'");
 }
 ?>

@@ -2,6 +2,7 @@
 html{
   display: grid;
   scroll-behavior: smooth;
+  color:hsla(0, 0%, 33%, 0.8);
 }
 @media only screen and (max-width: 800px) {
   upperbody ol{
@@ -125,12 +126,6 @@ color: rgb(245, 245, 245);
       font-size: 26px;
   }
   
-/* 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
   
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {

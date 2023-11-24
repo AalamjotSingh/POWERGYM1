@@ -51,19 +51,10 @@
 
 <body onload="loaded()">
 
-  <!-- <div style="background-color: hsl(0,0%,0%,0.9); opacity: 0.8;" class="topnav" id="navbar">
-    <a style="text-decoration: none;" href="#home" class="active">Home</a>
-    <a style="text-decoration: none;" href="#table">Pricing</a>
-    <a style="text-decoration: none;" href="#membership_form">Location</a>
-    <a style="text-decoration: none;" href="#cssparagraph">About</a>
-    <a href="crossreference.html">X-REF</a>
-    <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div> -->
 
-  <div class="upperbody" id="transition" id="backgoundcolorusage">
-    <ol id="olusage" id="olusage">
+  <div class="upperbody" id="transition" id="backgoundcolorusage"
+        style="background-image: url('Images/guy_deadlift.jpg');">
+      <ol id="olusage" id="olusage">
       <li id="liusage"><a style="text-decoration: none;" href="#">Home</a></li>
       <li id="floatusage" id="ausage"><a style="text-decoration: none;" href="#about">About</a></li>
       <li><a style="text-decoration: none;" href="#Pricing">Pricing</a></li>
@@ -249,7 +240,7 @@ function showSlides(n) {
   <br>
 <!------------------------------------------------------------------------------ table --------------------------------------------------------------------------------------------------------------->
 
-  <table class="table ">
+  <table class="table" id="pricingTable">
     <thead>
       <tr>
         <th></th>
@@ -309,11 +300,12 @@ function showSlides(n) {
       <h2>Membership Form</h2>
 
     </div>
-    <div class="row">
+    <div class="row" id="location_map">
       <div class="column">
         <h1>Demo Location </h1>
-        <iframe src="https://www.google.com/maps/place/Thompson+Rivers+University,+805+Tru+Way,+Kamloops,+BC+V2C+0C8/@50.6707684,-120.3660271,17z/data=!4m6!3m5!1s0x537e2c5fd4b3fa8d:0x9373b6f9763ebbf4!8m2!3d50.6707684!4d-120.3660271!16zL20vMDNfOGQ1" width="500px" height="500 px" frameborder="0"></iframe>
-      </div>
+        <!-- <iframe src="https://www.google.com/maps/place/Thompson+Rivers+University,+805+Tru+Way,+Kamloops,+BC+V2C+0C8/@50.6707684,-120.3660271,17z/data=!4m6!3m5!1s0x537e2c5fd4b3fa8d:0x9373b6f9763ebbf4!8m2!3d50.6707684!4d-120.3660271!16zL20vMDNfOGQ1" width="500px" height="500 px" frameborder="0"></iframe> -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.484367872934!2d-120.3658186843114!3d50.67131437950879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c5fd4b3fa8d%3A0x9373b6f9763ebbf4!2sThompson%20Rivers%20University%2C%20805%20Tru%20Way%2C%20Kamloops%2C%20BC%20V2C%200C8%2C%20Canada!5e0!3m2!1sen!2sca!4v1636149296563!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
 <!------------------------------------------------------------------------------ form --------------------------------------------------------------------------------------------------------------->
       <form action="#" method="post" id="Pricing">
         <h2>Membership Information</h2>
@@ -417,7 +409,7 @@ function showSlides(n) {
                 input.style.border = '';
               } else {
                 // Invalid input, add red border
-                input.style.border = '2px solid red';
+                input.style.border = '5px solid red';
               }
             });
 

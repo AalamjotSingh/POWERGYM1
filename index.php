@@ -52,8 +52,7 @@
 <body onload="loaded()">
 
 
-  <div class="upperbody" id="transition" id="backgoundcolorusage"
-        style="background-image: url('Images/guy_deadlift.jpg');">
+  <div class="upperbody" style="background-image: url('Images/guy_deadlift.jpg');">
       <ol id="olusage" id="olusage">
       <li id="liusage"><a style="text-decoration: none;" href="#">Home</a></li>
       <li id="floatusage" id="ausage"><a style="text-decoration: none;" href="#about">About</a></li>
@@ -219,15 +218,43 @@ function showSlides(n) {
   <div id="validate" class="row"
     style="background-color: grey;text-align: center;height: auto;padding: 10px;margin: 70px;">
 
-    <span style="color: white;margin: auto; ;display:block;text-align:center ; font-size: xx-large;"
-      id="signupfornewslator "> Subscribe for news and promotions</span>
-    <form action="#" id="form1">
+    <span style="color: white;margin: auto; ;display:block;text-align:center ; "> Subscribe for news and promotions</span>
+    <!-- <form action="#" id="form1">
 
       <input type="text" placeholder="First Name" style="margin-left :5px;" id="firsts">
       <input type="text" placeholder="Last" style="margin-left: 5px;" id="lasts">
       <input type="text" placeholder="Email" style="margin-left: 5px;" id="emails">
       <input type="submit" value="Subscribe" id="submits" onclick="validate()">
-    </form>
+    </form> -->
+<!-- HTML form with AJAX -->
+<form id="subscribeForm">
+    <input type="text" placeholder="First Name" name="firsts">
+    <input type="text" placeholder="Last Name" name="lasts">
+    <input type="text" placeholder="Email" name="emails">
+    <input type="submit" value="Subscribe">
+</form>
+
+<!-- jQuery and AJAX script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#subscribeForm').submit(function (e) {
+            e.preventDefault();
+            $.ajax({
+                type: 'POST',
+                url: 'subscribe.php',
+                data: $('#subscribeForm').serialize(),
+                success: function (response) {
+                    // Display the response (success or error) to the user
+                    alert(response);
+                },
+                error: function () {
+                    alert('An error occurred while processing your request.');
+                }
+            });
+        });
+    });
+</script>
 
 
 

@@ -6,6 +6,20 @@
   <meta name="keywords" content="HTML,CSS,XML,JavaScript">
   <meta name="author" content="Aalamjot Singh">
   <meta name="viewport" content="width=device-width, initial-scale=0.4">
+ <!---------------------------- Add meta tags for SEO ----------------------------------------------------------------->
+ <meta name="description" content="Power Gym - Your ultimate fitness destination. Find workout tips, classes, and more.">
+  <meta name="keywords" content="fitness, gym, workouts, exercise, health, powerlifting, bodybuilding">
+  <meta name="author" content="Aalamjot Singh">
+   <!---- index the page ------>
+  <meta name="robots" content="index, follow">
+
+
+ <!-- Open Graph meta tags for social media sharing -->
+ <meta property="og:title" content="Power Gym">
+  <meta property="og:description" content="Your ultimate fitness destination. Find workout tips, classes, and more.">
+  <meta property="og:image" content="Images/guy_deadlift.jpg">
+  <meta property="og:url" content="https://www.instagram.com/powergymuk">
+
 
 
 <title>  Power Gym  </title>
@@ -37,19 +51,8 @@
 
 
 
-<!-- responsive navbar -->
-<!-- <script>
-  function navbarFunction() {
-    var x = document.getElementById("navbar");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-</script> -->
-
 <body onload="loaded()">
+<!------------------------------- banner and logo ---------------------------------------------------------->
 
 
   <div class="upperbody" style="background-image: url('Images/guy_deadlift.jpg');">
@@ -265,7 +268,7 @@ function showSlides(n) {
   <h1 style="text-align: center;margin: 10px; font-family: 'Times New Roman', Times, serif;letter-spacing: 10px; ">Pricing
   </h1>
   <br>
-<!------------------------------------------------------------------------------ table --------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------pricing table --------------------------------------------------------------------------------------------------------------->
 
   <table class="table" id="pricingTable">
     <thead>
@@ -330,7 +333,6 @@ function showSlides(n) {
     <div class="row" id="location_map">
       <div class="column">
         <h1>Demo Location </h1>
-        <!-- <iframe src="https://www.google.com/maps/place/Thompson+Rivers+University,+805+Tru+Way,+Kamloops,+BC+V2C+0C8/@50.6707684,-120.3660271,17z/data=!4m6!3m5!1s0x537e2c5fd4b3fa8d:0x9373b6f9763ebbf4!8m2!3d50.6707684!4d-120.3660271!16zL20vMDNfOGQ1" width="500px" height="500 px" frameborder="0"></iframe> -->
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.484367872934!2d-120.3658186843114!3d50.67131437950879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2c5fd4b3fa8d%3A0x9373b6f9763ebbf4!2sThompson%20Rivers%20University%2C%20805%20Tru%20Way%2C%20Kamloops%2C%20BC%20V2C%200C8%2C%20Canada!5e0!3m2!1sen!2sca!4v1636149296563!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 <!------------------------------------------------------------------------------ form --------------------------------------------------------------------------------------------------------------->
@@ -470,7 +472,7 @@ function showSlides(n) {
         }
 
 
-        /* Disable submit button by default */
+        /* Disable submit button unless valid inputs are enterd */
         button[type="submit"] {
           opacity: 0.5;
           pointer-events: none;
@@ -493,11 +495,16 @@ function showSlides(n) {
     <p style="font-size: medium;" id="date"></p>
     Made By Aalamjot Singh &#169;
     <br>
-    <h4><a href="crossreference.html">Crossrefernce page</a></h4>
+    <!-- Social Media Icons from Font Awesome -->
+    <a href="https://www.instagram.com/powergymuk" target="_blank" style="color: green; font-size: 24px;"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.facebook.com/PowergymUK/" target="_blank" style="color: green; font-size: 24px;"><i class="fa fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/aalamjot-singh-5391741a2/" target="_blank" style="color: green; font-size: 24px;"><i class="fa fa-linkedin"></i></a>
+
+    <br>
+    <h4><a href="crossreference.html">Crossreference page</a></h4>
     <span>Present Time</span>
     <p style="font-size: large;" id="time"></p>
-  </footer>
-
+    </footer>
   </div>
 </body>
 

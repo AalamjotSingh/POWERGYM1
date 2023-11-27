@@ -14,12 +14,17 @@
   <meta name="robots" content="index, follow">
 
 
- <!-- Open Graph meta tags for social media sharing -->
+ <!-- Open Graph meta tags for social media sharing, when user shares my website across social media like instagram,twitter, and linkedin the platform will create a relevant post in the sharees DMs  -->
  <meta property="og:title" content="Power Gym">
   <meta property="og:description" content="Your ultimate fitness destination. Find workout tips, classes, and more.">
   <meta property="og:image" content="Images/guy_deadlift.jpg">
   <meta property="og:url" content="https://www.instagram.com/powergymuk">
 
+<!-- Twitter Card meta tags -->
+<meta name="twitter:card" content="Power Gym">
+  <meta name="twitter:title" content="Power Gym">
+  <meta name="twitter:description" content="Your ultimate fitness destination. Find workout tips, classes, and more.">
+  <meta name="twitter:image" content="Images/guy_deadlift.jpg">
 
 
 <title>  Power Gym  </title>
@@ -33,15 +38,15 @@
 
 </head>
 
-<!---------------------------- php navbar --------------------->
+<!---------------------------- php navbar ------------------------------------------->
 <?php include 'navbar.php'; ?>
 
 
-<!---------------------------- javascript --------------------->
+<!---------------------------- javascript -------------------------------------------->
 <script src="main.js"></script>
 <script src="responsive_navbar.js"></script>
 
-<!------------------------------- css ------------------------------------->
+<!------------------------------- css ------------------------------------------------>
 <link rel="stylesheet" href="CSS/upperbody.css" type="text/css">
 <link rel="stylesheet" href="CSS/midbody.css" type="text/css">
 
@@ -52,7 +57,7 @@
 
 
 <body onload="loaded()">
-<!------------------------------- banner and logo ---------------------------------------------------------->
+<!------------------------------- banner and logo ------------------------------------->
 
 
   <div class="upperbody" style="background-image: url('Images/guy_deadlift.jpg');">
